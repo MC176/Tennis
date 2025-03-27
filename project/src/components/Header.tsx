@@ -1,15 +1,29 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import LanguageSelector from './LanguageSelector';
 
-const Header = () => {
+interface HeaderProps {
+  language: string;
+  onLanguageChange: (language: string) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ language, onLanguageChange }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navigation = [
+  const navigation = language === 'fr' ? [
     { name: 'Accueil', href: '/' },
     { name: 'À Propos', href: '/a-propos' },
     { name: 'Installations', href: '/installations' },
+    { name: 'Avantages', href: '/avantages' },
     { name: 'Réservation', href: '/reservation' },
+    { name: 'Contact', href: '/contact' },
+  ] : [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/a-propos' },
+    { name: 'Facilities', href: '/installations' },
+    { name: 'Advantages', href: '/avantages' },
+    { name: 'Booking', href: '/reservation' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -22,7 +36,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -32,6 +46,7 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <LanguageSelector currentLanguage={language} onLanguageChange={onLanguageChange} />
           </div>
 
           {/* Mobile Navigation Button */}
@@ -57,6 +72,9 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              <div className="px-3 py-2">
+                <LanguageSelector currentLanguage={language} onLanguageChange={onLanguageChange} />
+              </div>
             </div>
           </div>
         )}
