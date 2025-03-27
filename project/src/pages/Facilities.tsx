@@ -66,7 +66,7 @@ const Facilities = () => {
                 </Link>
               </div>
               <img
-                src="https://images.unsplash.com/photo-1570829053985-56e661df1ca2?q=80&w=2070"
+                src="https://unsplash.com/fr/photos/textile-blanc-sur-un-champ-dherbe-verte-pres-des-arbres-pendant-la-journee-u_CJSPUW908"
                 alt="Piste BMX"
                 className="h-96 w-full object-cover order-1 md:order-2"
               />
@@ -79,7 +79,7 @@ const Facilities = () => {
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <img
-                src="https://images.unsplash.com/photo-1577224682124-d500ae4cd094?q=80&w=2070"
+                src="https://unsplash.com/fr/photos/commode-a-cote-du-canape-JIUjvqe2ZHg"
                 alt="Vestiaires"
                 className="h-96 w-full object-cover"
               />

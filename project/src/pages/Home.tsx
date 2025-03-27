@@ -1,24 +1,18 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Leaf, Maximize, Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { tennisCourt1, tennisHero, bmxTrack1 } from '../assets/images';
 
 const Home = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative h-screen">
-        <video
-          autoPlay
-          muted
-          loop
+        <img
+          src={tennisCourt1}
+          alt="Tennis Court"
           className="absolute inset-0 w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=2070"
-        >
-          <source
-            src="https://player.vimeo.com/external/477743905.sd.mp4?s=4c6d7a4c8a9c6f75c69d9d9cae99c66c78b45c1c&profile_id=164&oauth2_token_id=57447761"
-            type="video/mp4"
-          />
-        </video>
+        />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative h-full flex items-center justify-center text-center">
           <div className="max-w-4xl px-4">
@@ -46,7 +40,7 @@ const Home = () => {
             {/* Tennis Courts */}
             <div className="text-center">
               <img
-                src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?q=80&w=1964"
+                src={tennisHero}
                 alt="Courts de Tennis"
                 className="w-full h-64 object-cover mb-6"
               />
@@ -66,7 +60,7 @@ const Home = () => {
             {/* BMX Track */}
             <div className="text-center">
               <img
-                src="https://images.unsplash.com/photo-1570829053985-56e661df1ca2?q=80&w=2070"
+                src={bmxTrack1}
                 alt="Piste BMX"
                 className="w-full h-64 object-cover mb-6"
               />
@@ -81,6 +75,44 @@ const Home = () => {
                 Découvrir
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advantages Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Nos Avantages</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <div className="flex justify-center mb-6 text-black">
+                <Leaf className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold text-center mb-4">En pleine nature</h3>
+              <p className="text-gray-600 text-center">
+                Profitez d'un cadre exceptionnel en pleine nature pour votre pratique sportive. Un environnement paisible et ressourçant pour une expérience unique.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <div className="flex justify-center mb-6 text-black">
+                <Maximize className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold text-center mb-4">Grands espaces</h3>
+              <p className="text-gray-600 text-center">
+                Des installations spacieuses et bien pensées pour votre confort. Profitez de grands espaces pour pratiquer votre sport en toute liberté.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <div className="flex justify-center mb-6 text-black">
+                <Smartphone className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold text-center mb-4">Infrastructures 100% digitales</h3>
+              <p className="text-gray-600 text-center">
+                Une expérience utilisateur optimale avec notre système de réservation en ligne. Sélectionnez votre court, réservez et payez en quelques clics.
+              </p>
             </div>
           </div>
         </div>
