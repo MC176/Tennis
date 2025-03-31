@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Leaf, Maximize, Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { tennisCourt1, tennisHero, bmxTrack1 } from '../assets/images';
+import { tennisCourt1, tennisHero, bmxTrack1, facilityOverview } from '../assets/images';
 
 const Home = () => {
   return (
@@ -156,7 +156,7 @@ const Home = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1559751880-e0c1169aa845?q=80&w=1470"
+                src={facilityOverview}
                 alt="Saint Restitut"
                 className="rounded-lg shadow-lg w-full h-[400px] object-cover"
               />

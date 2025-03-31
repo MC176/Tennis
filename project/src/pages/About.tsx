@@ -1,4 +1,5 @@
 import React from 'react';
+import { tennisCourt2 } from '../assets/images';
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1470"
+              src={tennisCourt2}
               alt="Combe Arena"
               className="w-full h-96 object-cover"
             />
