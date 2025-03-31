@@ -36,7 +36,7 @@ const Contact = () => {
                 <MapPin className="w-6 h-6 mr-4 flex-shrink-0" />
                 <div>
                   <h3 className="font-medium">Adresse</h3>
-                  <p className="text-gray-300">123 Avenue du Sport<br />Ville, 12345</p>
+                  <p className="text-gray-300">Les pointes de la Combe<br />Saint Restitut, 26130</p>
                 </div>
               </div>
 
@@ -44,7 +44,7 @@ const Contact = () => {
                 <Phone className="w-6 h-6 mr-4 flex-shrink-0" />
                 <div>
                   <h3 className="font-medium">Téléphone</h3>
-                  <p className="text-gray-300">01 23 45 67 89</p>
+                  <p className="text-gray-300">06 80 41 28 12</p>
                 </div>
               </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                 <Mail className="w-6 h-6 mr-4 flex-shrink-0" />
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-gray-300">contact@combearena.fr</p>
+                  <p className="text-gray-300">maxime@combearena.fr</p>
                 </div>
               </div>
             </div>
@@ -60,9 +60,7 @@ const Contact = () => {
             <div className="mt-12">
               <h3 className="font-medium mb-4">Horaires d'Ouverture</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>Lundi - Vendredi : 6h - 22h</li>
-                <li>Samedi : 7h - 21h</li>
-                <li>Dimanche : 8h - 20h</li>
+                <li>Lundi - Dimanche : 8h - 20h</li>
               </ul>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { bmxHero, lockerRoom } from '../assets/images';
 
 const Facilities = () => {
   return (
@@ -13,7 +14,7 @@ const Facilities = () => {
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <img
-                src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?q=80&w=1964"
+                src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1470"
                 alt="Courts de Tennis"
                 className="h-96 w-full object-cover"
               />
@@ -66,7 +67,7 @@ const Facilities = () => {
                 </Link>
               </div>
               <img
-                src="https://unsplash.com/fr/photos/textile-blanc-sur-un-champ-dherbe-verte-pres-des-arbres-pendant-la-journee-u_CJSPUW908"
+                src={bmxHero}
                 alt="Piste BMX"
                 className="h-96 w-full object-cover order-1 md:order-2"
               />
@@ -79,7 +80,7 @@ const Facilities = () => {
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <img
-                src="https://unsplash.com/fr/photos/commode-a-cote-du-canape-JIUjvqe2ZHg"
+                src={lockerRoom}
                 alt="Vestiaires"
                 className="h-96 w-full object-cover"
               />

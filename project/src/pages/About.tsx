@@ -9,7 +9,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070"
+              src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1470"
               alt="Combe Arena"
               className="w-full h-96 object-cover"
             />

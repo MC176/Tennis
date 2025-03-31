@@ -136,6 +136,34 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      {/* Saint Restitut Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Découvrez Saint Restitut</h2>
+              <p className="text-gray-600 mb-6">
+                Saint Restitut est un charmant village provençal situé dans la Drôme. Riche en histoire et en patrimoine, 
+                il est connu pour sa pierre calcaire unique et ses carrières historiques. Le village offre une vue imprenable 
+                sur la vallée du Rhône et les dentelles de Montmirail.
+              </p>
+              <p className="text-gray-600">
+                Aujourd'hui, Saint Restitut allie parfaitement tradition et modernité, comme en témoigne le complexe sportif 
+                Combe Arena. Le village propose de nombreuses activités culturelles et sportives, faisant de lui un lieu de 
+                vie dynamique et accueillant pour tous ses visiteurs.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1559751880-e0c1169aa845?q=80&w=1470"
+                alt="Saint Restitut"
+                className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
